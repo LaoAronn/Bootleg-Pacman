@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+     
+	<head>
+		<title>Bootleg Pac Man</title>
+		<meta charset="UTF-8">
+		<script src="projpt1.js"></script>
+	</head>
+
+	<body onload="setup()" onkeydown="keyPressed(event)">
+	    <h1>Pac Man Version 2<h1>
+		<canvas id="surface" width="500" height="500" style="border :solid"></canvas>
+        <p id="user_score">Score: 0 </p>
+
+        <button onclick="resetGame()">Reset</button> 
+		
+		<p>Game Settings</p>
+		<h2>Walls</h2>
+		<button onclick="fixedWalls()">Fixed Walls</button> <button onclick="randWalls()">Scattered Walls</button><br>
+		<h2>Enemy Mode</h2>
+		<button onclick="startTime('1')">1 [Vertical Movement]</button> <button onclick="startTime('2')">2 [Horizontal Movement]</button> <button onclick="startTime('3')">3 [Random]</button>
+		
+	</body>
+
+</html>
